@@ -13,7 +13,7 @@ const useGetSkills = () => {
       const { data } = await restApiClient.getSkills();
 
       setSkills(data);
-    } catch (_) {
+    } catch {
       setSkills([]);
     } finally {
       setIsLoading(false);

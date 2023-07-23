@@ -10,7 +10,7 @@ const axiosPublic = axios.create({
   },
 });
 
-const logut = () => localStorage.removeItem("session");
+const logout = () => localStorage.removeItem("session");
 
 const login = async (params) => {
   try {
@@ -19,8 +19,8 @@ const login = async (params) => {
     localStorage.setItem("session", JSON.stringify(session));
 
     return session;
-  } catch (_) {
-    logut();
+  } catch {
+    logout();
 
     return null;
   }
@@ -34,7 +34,7 @@ const refreshTokenUnauth = async () => {
       refresh: session?.refresh || "",
     });
 
-    logut();
+    logout();
 
     localStorage.setItem(
       "session",
@@ -42,8 +42,8 @@ const refreshTokenUnauth = async () => {
     );
 
     return data.access;
-  } catch (_) {
-    logut();
+  } catch {
+    logout();
 
     return "";
   }
