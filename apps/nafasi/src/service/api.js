@@ -9,7 +9,7 @@ const api = () => {
     baseURL,
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${session.access || ""}`,
+      Authorization: `Bearer ${session?.access || ""}`,
     },
   });
 
