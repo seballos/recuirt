@@ -5,5 +5,5 @@ interface MainProps {
 }
 
 export const Main: React.FC<MainProps> = ({ children }) => {
-  return <main>{children}</main>;
+  return <main className="m-8">{children}</main>;
 };
