@@ -1,10 +1,9 @@
-import { Header, Main } from "ui";
+import { Main } from "ui";
 
 export default function Page() {
   return (
     <>
-      <Header text="Recuirt" />
-      <Main>Revoluciona tu proceso de selección con Recuirt</Main>
+      <Main>Disprupt your recruitment process</Main>
     </>
   );
 }
