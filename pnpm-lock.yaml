@@ -45,6 +45,9 @@ importers:
         specifier: ^9.0.0
         version: 9.0.1
     devDependencies:
+      '@recuirt/configs':
+        specifier: workspace:*
+        version: link:../../packages/configs
       '@types/react':
         specifier: ^18.0.37
         version: 18.2.5
