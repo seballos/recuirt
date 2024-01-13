@@ -15,9 +15,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.1",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "ui": "workspace:*"
   },
   "devDependencies": {
+    "@recuirt/configs": "workspace:*",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react-swc": "^3.0.0",
